@@ -49,6 +49,6 @@ convo = model.start_chat(history=[
   },
 ])
 
-def getHashtags(numOfHashtags=10, topic="software"):
+def getHashtags(numOfHashtags="10", topic="software"):
     convo.send_message(f"Use exact same instructions as last prompt, but now display {numOfHashtags} hashtags for topic {topic}")
     return convo.last.text
